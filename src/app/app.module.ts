@@ -11,6 +11,12 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { Pro } from '@ionic/pro';
+
+Pro.init('abdc6727', {
+  appVersion: '0.0.1'
+});
+
 @NgModule({
   declarations: [
     MyApp,
