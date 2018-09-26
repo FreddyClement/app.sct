@@ -4,14 +4,18 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
+
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import {GameListPage} from "../pages/game-list/game-list";
+import {GameDetailPage} from "../pages/game-detail/game-detail";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Pro } from '@ionic/pro';
+
 
 Pro.init('abdc6727', {
   appVersion: '0.0.1'
@@ -22,6 +26,8 @@ Pro.init('abdc6727', {
     MyApp,
     AboutPage,
     ContactPage,
+    GameListPage,
+    GameDetailPage,
     HomePage,
     TabsPage
   ],
@@ -34,6 +40,8 @@ Pro.init('abdc6727', {
     MyApp,
     AboutPage,
     ContactPage,
+    GameListPage,
+    GameDetailPage,
     HomePage,
     TabsPage
   ],
