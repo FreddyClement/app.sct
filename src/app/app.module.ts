@@ -15,6 +15,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Pro } from '@ionic/pro';
+import { SQLite  } from '@ionic-native/sqlite';
+import { CategoriesProvider } from '../providers/categories/categories';
+import { GamesProvider } from '../providers/games/games';
+
+
 
 
 Pro.init('abdc6727', {
@@ -47,8 +52,11 @@ Pro.init('abdc6727', {
   ],
   providers: [
     StatusBar,
+    SQLite,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CategoriesProvider,
+    GamesProvider
   ]
 })
 export class AppModule {}

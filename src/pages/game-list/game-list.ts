@@ -20,11 +20,14 @@ export class GameListPage {
   }
 
   ionViewDidLoad() {
-    //faire l'appel en base de la catégorie choisis
+    this.allGame();
   }
 
   gameDetail(){
     this.navCtrl.push(GameDetailPage);
   }
 
+  allGame(){
+    console.log("yo");
+  }
 }
